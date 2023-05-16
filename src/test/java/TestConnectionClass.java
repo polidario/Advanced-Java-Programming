@@ -1,5 +1,7 @@
 import org.bbpolidario.Users.User;
 import org.bbpolidario.Users.UsersDAO;
+import org.bbpolidario.services.exceptions.DatamodelCreationException;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,15 +20,24 @@ public class TestConnectionClass {
     }
 
     @Test
-    public void test() throws SQLException {
+    public void testCreate() throws DatamodelCreationException, SQLException {
 
         //given (handled by setup())
-        UsersDAO usersDAO = new UsersDAO();
-        User user = new User(1, "John");
-        //when
-        usersDAO.create(user);
+        UsersDAO dao = new UsersDAO();
+        User user = new User(1, "Thomas");
+
 
         //when
+        dao.create(user);
+
+        //then
+        ResultSet resultSet = this.connection.prepareStatement("SELECT * FROM USERS WHERE ID = 1").executeQuery();
+        String name = null;
+        while (resultSet.next()){
+            name = resultSet.getString("NAME");
+        }
+
+        Assertions.assertEquals(name, "Thomas");
 
     }
 
@@ -34,8 +45,8 @@ public class TestConnectionClass {
     public void testSearch() throws SQLException {
 
         //given (handled by setup())
-
-        //when
+        UsersDAO dao = new UsersDAO();
+        User user = new User(1, "Thomas");
 
         //when
         PreparedStatement selectStatement = connection.prepareStatement("SELECT ID,NAME FROM USERS");

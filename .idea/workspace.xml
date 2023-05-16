@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f770a5-97bb-47b2-90a4-227f4d1ecc4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestConnectionClass.java" afterDir="false" />
+    <list default="true" id="85f770a5-97bb-47b2-90a4-227f4d1ecc4e" name="Changes" comment="Database Connection and Testing">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/services/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/services/exceptions/CreationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/services/exceptions/DatamodelCreationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestConnectionClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestConnectionClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.bbpolidario.services.exceptions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestConnectionClass.testSearch">
+    <configuration name="TestConnectionClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenNewProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConnectionClass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestConnectionClass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MavenNewProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,8 +86,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestConnectionClass.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenNewProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConnectionClass" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConnectionClass.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenNewProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestConnectionClass" />
+      <option name="METHOD_NAME" value="testSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestConnectionClass.testSearch" />
+        <item itemvalue="JUnit.TestConnectionClass.testCreate" />
+        <item itemvalue="JUnit.TestConnectionClass" />
         <item itemvalue="JUnit.TestConnectionClass.test" />
       </list>
     </recent_temporary>
@@ -91,11 +124,23 @@
       <option name="presentableId" value="Default" />
       <updated>1682340986319</updated>
       <workItem from="1682340988021" duration="3808000" />
-      <workItem from="1684230520921" duration="2196000" />
+      <workItem from="1684230520921" duration="3789000" />
     </task>
+    <task id="LOCAL-00001" summary="Database Connection and Testing">
+      <created>1684232925837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684232925838</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Database Connection and Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database Connection and Testing" />
   </component>
 </project>
