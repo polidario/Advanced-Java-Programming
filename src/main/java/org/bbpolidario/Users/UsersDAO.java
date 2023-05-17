@@ -10,6 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UsersDAO {
+    public static UsersDAO getInstance() {
+        return new UsersDAO();
+    }
+
     public void create(User user) throws DatamodelCreationException {
         try {
             Connection connection = Configuration.getConnection();

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f770a5-97bb-47b2-90a4-227f4d1ecc4e" name="Changes" comment="Search exception implementation &amp; update user dao">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SpringApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestSpring.java" afterDir="false" />
+    <list default="true" id="85f770a5-97bb-47b2-90a4-227f4d1ecc4e" name="Changes" comment="Test Dependency Injection implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SpringApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSpring.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <recent name="org.bbpolidario.services.exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSpring.test">
+  <component name="RunManager" selected="JUnit.TestSpring">
     <configuration name="TestConnectionClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MavenNewProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSpring.test" />
         <item itemvalue="JUnit.TestSpring" />
+        <item itemvalue="JUnit.TestSpring.test" />
         <item itemvalue="JUnit.TestConnectionClass.testSearch" />
         <item itemvalue="JUnit.TestConnectionClass.testCreate" />
         <item itemvalue="JUnit.TestConnectionClass" />
@@ -133,7 +133,7 @@
       <updated>1682340986319</updated>
       <workItem from="1682340988021" duration="3808000" />
       <workItem from="1684230520921" duration="4603000" />
-      <workItem from="1684314890260" duration="2668000" />
+      <workItem from="1684314890260" duration="3696000" />
     </task>
     <task id="LOCAL-00001" summary="Database Connection and Testing">
       <created>1684232925837</created>
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684316392742</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Test Dependency Injection implementation">
+      <created>1684318632003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684318632003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +184,7 @@
     <MESSAGE value="Database Connection and Testing" />
     <MESSAGE value="DAO Implementation" />
     <MESSAGE value="Search exception implementation &amp; update user dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search exception implementation &amp; update user dao" />
+    <MESSAGE value="Test Dependency Injection implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Dependency Injection implementation" />
   </component>
 </project>

@@ -1,3 +1,4 @@
+import org.bbpolidario.Users.UsersDAO;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -13,8 +14,13 @@ public class TestSpring {
     @Named("TestDependencyInjection")
     String HelloWorld;
 
+    @Inject
+    @Named("TestUserDependencyInjection")
+    UsersDAO helloUser;
+
     @Test
     public void test() {
         System.out.println(HelloWorld);
+        System.out.println(helloUser);
     }
 }
