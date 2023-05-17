@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f770a5-97bb-47b2-90a4-227f4d1ecc4e" name="Changes" comment="DAO Implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/services/exceptions/DatamodelSearchException.java" afterDir="false" />
+    <list default="true" id="85f770a5-97bb-47b2-90a4-227f4d1ecc4e" name="Changes" comment="Search exception implementation &amp; update user dao">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SpringApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestSpring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bbpolidario/Users/UsersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,44 +41,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;1cd05c057cfa802981ec18d897ab3170&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "1cd05c057cfa802981ec18d897ab3170",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.bbpolidario.services.exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestConnectionClass.testSearch">
+  <component name="RunManager" selected="JUnit.TestSpring.test">
     <configuration name="TestConnectionClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MavenNewProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestConnectionClass" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestConnectionClass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MavenNewProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestConnectionClass" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,12 +94,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenNewProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSpring" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenNewProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSpring" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSpring.test" />
+        <item itemvalue="JUnit.TestSpring" />
         <item itemvalue="JUnit.TestConnectionClass.testSearch" />
         <item itemvalue="JUnit.TestConnectionClass.testCreate" />
         <item itemvalue="JUnit.TestConnectionClass" />
-        <item itemvalue="JUnit.TestConnectionClass.test" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +133,7 @@
       <updated>1682340986319</updated>
       <workItem from="1682340988021" duration="3808000" />
       <workItem from="1684230520921" duration="4603000" />
-      <workItem from="1684314890260" duration="1067000" />
+      <workItem from="1684314890260" duration="2668000" />
     </task>
     <task id="LOCAL-00001" summary="Database Connection and Testing">
       <created>1684232925837</created>
@@ -137,15 +149,34 @@
       <option name="project" value="LOCAL" />
       <updated>1684235033977</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Search exception implementation &amp; update user dao">
+      <created>1684316392742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684316392742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Database Connection and Testing" />
     <MESSAGE value="DAO Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAO Implementation" />
+    <MESSAGE value="Search exception implementation &amp; update user dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search exception implementation &amp; update user dao" />
   </component>
 </project>
