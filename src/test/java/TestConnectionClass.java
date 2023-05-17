@@ -2,14 +2,19 @@ import org.bbpolidario.Users.User;
 import org.bbpolidario.Users.UsersDAO;
 import org.bbpolidario.services.exceptions.DatamodelCreationException;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import java.sql.*;
 
 public class TestConnectionClass {
     private Connection connection;
+    private static DriverManagerDataSource ds;
+
+    @BeforeAll
+    public static void before() {
+        ds = new DriverManagerDataSource("jdbc:h2:mem:test", "user","user");
+    }
 
     @BeforeEach
     public void setup() throws SQLException {
@@ -23,7 +28,7 @@ public class TestConnectionClass {
     public void testCreate() throws DatamodelCreationException, SQLException {
 
         //given (handled by setup())
-        UsersDAO dao = new UsersDAO();
+        UsersDAO dao = new UsersDAO(ds);
         User user = new User(1, "Thomas");
 
 
@@ -45,7 +50,7 @@ public class TestConnectionClass {
     public void testSearch() throws SQLException {
 
         //given (handled by setup())
-        UsersDAO dao = new UsersDAO();
+        UsersDAO dao = new UsersDAO(ds);
         User user = new User(1, "Thomas");
 
         //when
@@ -60,6 +65,7 @@ public class TestConnectionClass {
 
     @AfterEach
     public void tearDown() throws SQLException {
+        connection.prepareStatement("DROP TABLE USERS").execute();
         connection.close();
     }
 }

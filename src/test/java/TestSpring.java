@@ -1,4 +1,6 @@
 import org.bbpolidario.Users.UsersDAO;
+import org.bbpolidario.Users.User;
+import org.bbpolidario.services.exceptions.DatamodelCreationException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -15,12 +17,13 @@ public class TestSpring {
     String HelloWorld;
 
     @Inject
-    @Named("TestUserDependencyInjection")
-    UsersDAO helloUser;
+    UsersDAO dao;
 
     @Test
-    public void test() {
+    public void test() throws DatamodelCreationException {
         System.out.println(HelloWorld);
-        System.out.println(helloUser);
+        User user = new User(1, "Thomas");
+        dao.createTable();
+        dao.create(user);
     }
 }
